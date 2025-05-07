@@ -14,3 +14,11 @@ model Product {
   price       Float
   createdAt   DateTime @default(now())
 }
+
+model bruno {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String?
+  price       Float
+  createdAt   DateTime @default(now())
+}
