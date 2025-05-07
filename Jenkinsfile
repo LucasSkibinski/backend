@@ -26,7 +26,7 @@ pipeline {
         // }
         stage('build image') {
             steps {
-                bat 'docker build -t nestjs-server:1.0 .'
+                bat 'docker build -t backend:1.0 .'
             }
         }
         stage('docker push') {
