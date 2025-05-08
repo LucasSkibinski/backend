@@ -15,8 +15,10 @@ COPY . .
 
 RUN npx prisma generate
 
+RUN npx prisma db push
+
 # Compile o código TypeScript para a pasta dist
-RUN npm run build
+RUN npm run build 
 
 # Exponha a porta 3000 para o contêiner
 EXPOSE 3000
